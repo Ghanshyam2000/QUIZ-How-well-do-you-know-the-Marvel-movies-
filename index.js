@@ -74,7 +74,7 @@ for(var i = 0 ;i < marvelObjArray.length ;i++){
 for(var i =0 ; i<highScore.length ; i++){
   var current = highScore[i];
   if(current.score < score){
-    console.log("hey! you have beaten the " + (i+1)+ "HighScore");
+    console.log("hey! you have beaten the " + (i+1)+ " HighScore");
   }
 }
 
