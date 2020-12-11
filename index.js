@@ -25,6 +25,22 @@ function marvel(question, answer){
   console.log("--------------------------------")
 }
 
+// highScorer data
+var highScore = [
+  {
+    name : "one",
+    score : 4,
+  },
+  {
+    name : "two",
+    score : 3
+  },
+  {
+    name : "three",
+    score : 2
+  },
+]
+
 // array of object
 var marvelObjArray = [ {
     question : "What is Tony Stark’s final line in the first Iron Man : ",
@@ -52,6 +68,14 @@ for(var i = 0 ;i < marvelObjArray.length ;i++){
   console.log("Question No. : ", i+1)
   var currentObject =  marvelObjArray[i];
   marvel(currentObject.question ,  currentObject.answer)
+}
+
+// beaten the highScore or not
+for(var i =0 ; i<highScore.length ; i++){
+  var current = highScore[i];
+  if(current.score < score){
+    console.log("hey! you have beaten the " + (i+1)+ "HighScore");
+  }
 }
 
 console.log(chalk.bold.green("Your final score is : ", score))
